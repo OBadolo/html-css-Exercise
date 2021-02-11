@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.main {
+  text-align: justify;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* text */
+h1.large {
+ font-size: 50px
+}
+
+p.fw-thicker {
+ font-weight: 1000;
+}
+
+/* Four equal columns | sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 55%;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-left: 1px solid grey;
+  padding: 25px;
+}
+
+.column img {
+  margin-top: 30px;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.column, div, img-card {
+text-align: center;
+}
+
+/* Responsive layout | makes a 2 column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout | makes the 2 columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
